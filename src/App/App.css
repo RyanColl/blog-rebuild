@@ -1,0 +1,12 @@
+
+.App {
+  background-color: #dadde341;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hex-img {
+  position: absolute;
+  z-index: -1;
+}
