@@ -52,10 +52,17 @@
 .enjoy a b {
     color: #04080f;
 }
-.divider {
+.featured {
     margin-top: 30px;
-    width: 250px;
+    width: 200px;
     height: 14px;
-    background-color: #F1BD1F;
+    background-color: #F1BD1F; 
+    padding: 12px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #04080f;
+    font-size: 24px;
+    font-weight: 600;
 }
 

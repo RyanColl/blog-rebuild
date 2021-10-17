@@ -1,0 +1,30 @@
+#banner {
+    margin-top: 50px;
+    width: 890px;
+    height: 200px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 50px;
+    background-color: #efefef85;
+}
+.banner-title {
+    color: #04080f;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 10px 0 5px 0;
+}
+.banner-under-title {
+    color: #04080f;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0px 0 10px 0;
+}
+.banner-underline {
+    background-color: #f1bc20;
+    width: 100px;
+    height: 20px;
+    margin: 10px 0;
+}

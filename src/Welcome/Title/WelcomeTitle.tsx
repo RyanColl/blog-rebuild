@@ -8,7 +8,7 @@ const WelcomeTitle = (props: any) => {
             <span className='possession'>REACTIVE SOLUTIONS'</span>
             <div className='welcome-banner'><span>FULL</span><span>STACK</span><span>BLOG</span></div>
             <span className='enjoy'>Enjoy a Large Repository of Online <Link to='/blog'><b>Blogs</b></Link></span>
-            <span className='divider'></span>
+            <span className='featured'>FEATURED</span>
         </div>
     )
 }

@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Nav.css'
 import {Link} from 'react-router-dom'
+import store from "../Redux/store";
+
 const linksArray = [
     {
         id: 1,
@@ -42,12 +44,28 @@ const Nav = (props: any) => {
         })
         setLinks(assembly)
     }
+    useEffect(() => {
+        
+        store.subscribe(() => {
+            let [loc] = store.getState()
+           
+            let assembly = links.map(link => {
+                console.log(`location: ${loc}, ${link.location}`)
+                return {
+                    id: link.id,
+                    location: link.location,
+                    pressed: (loc.substr(1) === link.location || (loc === '/' && link.location === 'home')) ? true : false
+                }
+            })
+            setLinks(assembly)
+        })
+    })
     return(
         <div id='nav' className='navbar'>
             <div className='title'><h3>REACTIVE SOLUTIONS</h3></div>
             <div className='links'>
-                {links.map(link => {
-                    return(<div className={`link-btn ${link.pressed && 'link-pressed'}`}>
+                {links.map((link, i) => {
+                    return(<div key={i} className={`link-btn ${link.pressed && 'link-pressed'}`}>
                         <Link 
                         onClick={() => {linkPress(link.location)}} 
                         to={link.location === 'home' ? '/' : `/${link.location}`}

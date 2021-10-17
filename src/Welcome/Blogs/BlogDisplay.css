@@ -1,10 +1,98 @@
-#any {
-    width: 80%;
-    height: 300px;
-    background: linear-gradient(-45deg, #e0e0e0, #c4c2c2);
-    box-shadow:  31px 31px 62px #acacac,
-                 -31px -31px 62px #ffffff;
-    border-radius:51px;
+.blog-display {
+    margin-top: 15px;
+    width: 600px;
     display: flex;
-    margin: 25px 0;
+    align-items: center;
+    flex-direction: column;
+}
+.blog-display a {
+    width: 100%;
+    height: 112px;
+    margin: 35px 0 0 0;
+    text-decoration: none
+}
+.blog-link {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 557px 43px;
+    grid-template-rows: 1fr;
+    border-radius: 12px;
+}
+
+.blog-link-img-title {
+    background-color: #04080f;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+}
+.blog-link-arrow {
+    background-color: #c4c4c4;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+.blog-link-arrow:hover .arrow {
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 18px solid #747474;
+    transition: all 0.3s;
+}
+.arrow {
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #848484;
+    transition: all 0.3s;
+}
+.blog-logo-div {
+    width: 72px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e7e9ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    z-index: 1;
+    transition: all 0.3s;
+}
+.blog-logo-div:hover {
+    transform: scale(1.1);
+}
+.blog-logo-img-1 {
+    height: 75%;
+}
+.blog-logo-img-2 {
+    width: 70%;
+    margin: 0 0 3px 3px;
+}
+.blog-logo-img-3 {
+    width: 80%;
+}
+.blog-link-title-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px
+}
+.blog-link-title-text {
+    color: #e7e9ef;
+    text-align: center;
+    font-size: 28px;
+    z-index: 1;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+.blog-link-title-text:hover {
+    color: #c4c4c4;
+    transition: all 0.4s;
+    transform: scale(1.02);
 }
