@@ -32,14 +32,23 @@ const linksArray = [
 
 const Nav = (props: any) => {
     const [links, setLinks] = React.useState(linksArray)
+    const linkPress = (location: any) => {
+        let assembly = links.map(link => {
+            return {
+                id: link.id,
+                location: link.location,
+                pressed: (location === link.location) ? true : false
+            }
+        })
+        setLinks(assembly)
+    }
     return(
         <div id='nav' className='navbar'>
             <div className='title'><h3>REACTIVE SOLUTIONS</h3></div>
             <div className='links'>
                 {links.map(link => {
                     return(<div className={`link-btn ${link.pressed && 'link-pressed'}`}>
-                        <Link to={`/${link.location}`}><span>{link.location.toUpperCase()}</span></Link>
-                        {link.pressed && <span className='underline'></span>}
+                        <Link onClick={() => {linkPress(link.location)}} to={`/${link.location}`}><span>{link.location.toUpperCase()}</span>{link.pressed && <span className='underline'></span>}</Link>
                     </div>)
                 })}
             </div>
