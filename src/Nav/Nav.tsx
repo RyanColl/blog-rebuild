@@ -48,7 +48,13 @@ const Nav = (props: any) => {
             <div className='links'>
                 {links.map(link => {
                     return(<div className={`link-btn ${link.pressed && 'link-pressed'}`}>
-                        <Link onClick={() => {linkPress(link.location)}} to={`/${link.location}`}><span>{link.location.toUpperCase()}</span>{link.pressed && <span className='underline'></span>}</Link>
+                        <Link 
+                        onClick={() => {linkPress(link.location)}} 
+                        to={link.location === 'home' ? '/' : `/${link.location}`}
+                        >
+                            <span>{link.location.toUpperCase()}</span>
+                            {link.pressed && <span className='underline'></span>}
+                        </Link>
                     </div>)
                 })}
             </div>

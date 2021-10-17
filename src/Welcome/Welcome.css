@@ -1,0 +1,61 @@
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.welcome-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.welcome {
+    text-align: center;
+    font-size: 200px;
+    font-weight: 300;
+    color: #F1BD1F;
+}
+.welcome-banner {
+    width: 690px;
+    height: 150px;
+    background: rgba(239, 239, 239, 0.75);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.welcome-banner span:first-child {
+    padding-left: 50px;
+}
+.welcome-banner span:last-child {
+    padding-right: 50px;
+}
+
+.welcome-banner span {
+    font-weight: 700;
+    font-size: 60px;
+    color: #04080f;
+}
+.possession {
+    font-size: 36px;
+    margin: 30px 0 0 0;
+}
+.enjoy {
+    font-weight: 400;
+    font-size: 38px;
+    margin-top: 25px;
+}
+.enjoy a {
+    text-decoration: none;
+}
+.enjoy a b {
+    color: #04080f;
+}
+.divider {
+    margin-top: 30px;
+    width: 250px;
+    height: 14px;
+    background-color: #F1BD1F;
+}
+
