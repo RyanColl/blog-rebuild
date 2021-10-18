@@ -17,7 +17,7 @@
     color: #F1BD1F;
 }
 .to {
-    color: #04080f;
+    color: #2e2e2e;
     font-size: 20px;
 }
 .welcome-banner {
@@ -39,22 +39,24 @@
 .welcome-banner span {
     font-weight: 700;
     font-size: 60px;
-    color: #04080f;
+    color: #2e2e2e;
 }
 .possession {
     font-size: 36px;
     margin: 30px 0 0 0;
+    color: #2e2e2e;
 }
 .enjoy {
     font-weight: 400;
     font-size: 38px;
     margin-top: 25px;
+    color: #2e2e2e;
 }
 .enjoy a {
     text-decoration: none;
 }
 .enjoy a b {
-    color: #04080f;
+    color: #2e2e2e;
 }
 .featured {
     margin-top: 30px;
@@ -65,7 +67,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #04080f;
+    color: #2e2e2e;
     font-size: 24px;
     font-weight: 600;
     cursor: pointer;

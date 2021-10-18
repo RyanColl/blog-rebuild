@@ -55,7 +55,7 @@
 .blog-title {
     font-size: 48px;
     font-weight: 700;
-    color: #04080f;
+    color: #2e2e2e;
     transition: all 0.3s;
 }
 .blog-title-underline {
@@ -75,7 +75,7 @@
     grid-column: 1/2;
     font-size: 24px;
     font-weight: 400;
-    color: #04080f;
+    color: #2e2e2e;
     transition: all 0.3s;
 }
 .blog-img {

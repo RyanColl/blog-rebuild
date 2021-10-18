@@ -4,11 +4,11 @@
    display: flex;
    justify-content: space-evenly;
    align-items: center;
-   color: #04080f;
+   color: #2e2e2e;
 }
 .navbar a {
     text-decoration: none;
-    color: #04080f;
+    color: #2e2e2e;
     transition: all 0.3s;
 }
 .navbar a:hover {
@@ -59,7 +59,7 @@
 .link-btn a span {
     font-weight: 400;
     font-size: 18px;
-    color: #04080f;
+    color: #2e2e2e;
     transition: all 0.5s;
 }
 .underline {
