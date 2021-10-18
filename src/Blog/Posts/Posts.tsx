@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const Posts = (props: any) => {
     return(
         <div id='posts' className='posts'>
-            {Blogs.map(blog => {
-                return(<div className="post">
+            {Blogs.map((blog, i) => {
+                return(<div key={i} className="post">
                     <Link to={`/blog/${blog.id}`}><span className="post-title">{blog.title}</span></Link>
                     <span className="post-date">Updated on: {new Date().toDateString()}</span>
                     <span className="post-summary">{blog.summary}</span>

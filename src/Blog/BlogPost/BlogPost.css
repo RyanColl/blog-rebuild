@@ -95,7 +95,8 @@
     transition: all 0.3s;
 }
 .blog-img img {
-    height: 80%;
+    height: 75%;
+    margin: 0 0 10px 8px;
 }
 
 .blog-section-2, .blog-section-3 {
