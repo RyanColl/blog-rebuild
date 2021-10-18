@@ -7,14 +7,14 @@ import { useEffect } from 'react';
 import store from '../Redux/store';
 import * as actions from '../Redux/actions'
 import BlogPost from '../Blog/BlogPost/BlogPost';
-import { blogList } from '../Services/Services';
+import { blogList, pathName } from '../Services/Services';
 import React from 'react';
 const App = () => {
   const height = window.innerHeight
   const width = window.innerWidth
   useEffect(() => {
     window.scrollTo(0, 0)
-    store.dispatch(actions.location('/'.concat(window.location.pathname.split('/')[1])))
+    store.dispatch(actions.location(pathName))
   })
   return (
       <div className="App">

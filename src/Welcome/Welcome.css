@@ -16,6 +16,10 @@
     font-weight: 300;
     color: #F1BD1F;
 }
+.to {
+    color: #04080f;
+    font-size: 20px;
+}
 .welcome-banner {
     width: 690px;
     height: 150px;
@@ -64,5 +68,11 @@
     color: #04080f;
     font-size: 24px;
     font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.featured:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
 }
 

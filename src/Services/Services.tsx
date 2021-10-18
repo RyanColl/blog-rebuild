@@ -42,3 +42,5 @@ export const Blogs = [
         content: [`Welcome to my blog! Stay tuned for more content.`],
     }
 ]
+
+export const pathName = '/'.concat(window.location.pathname.split('/')[1])

@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {animateScroll as scroll} from 'react-scroll'
 const WelcomeTitle = (props: any) => {
     const scrollDown = () => {
-        
+        scroll.scrollToBottom()
     }
     return(
         <div id='welcome-title' className='welcome-title'>
@@ -11,7 +12,7 @@ const WelcomeTitle = (props: any) => {
             <span className='possession'>REACTIVE SOLUTIONS'</span>
             <div className='welcome-banner'><span>FULL</span><span>STACK</span><span>BLOG</span></div>
             <span className='enjoy'>Enjoy a Large Repository of Online <Link to='/blog'><b>Blogs</b></Link></span>
-            <a onClick={scrollDown} href='#'><span className='featured'>FEATURED</span></a>
+            <span onClick={scrollDown} className='featured'>FEATURED</span>
         </div>
     )
 }

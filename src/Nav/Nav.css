@@ -63,8 +63,8 @@
     transition: all 0.5s;
 }
 .underline {
-    width: 12px;
-    height: 2px;
+    width: 24px;
+    height: 3px;
     background-color: #f1bc20;
     margin-top: 1px;
     z-index: 1;
