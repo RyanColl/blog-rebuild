@@ -1,12 +1,14 @@
 import Nav from '../Nav/Nav';
 import './App.css';
-import {Switch, Route} from 'react-router-dom'
+import {Switch, Route, useParams} from 'react-router-dom'
 import Welcome from '../Welcome/Welcome';
 import Blog from '../Blog/Blog';
 import { useEffect } from 'react';
 import store from '../Redux/store';
 import * as actions from '../Redux/actions'
 import BlogPost from '../Blog/BlogPost/BlogPost';
+import { blogList } from '../Services/Services';
+import React from 'react';
 const App = () => {
   const height = window.innerHeight
   const width = window.innerWidth
@@ -30,7 +32,7 @@ const App = () => {
             <Route path='/blog' exact>
                 <Blog />
             </Route>
-            <Route path='/blog:id'>
+            <Route path='/blog/:id'>
               <BlogPost />
             </Route>
           </Switch>
@@ -42,3 +44,4 @@ const App = () => {
 }
 
 export default App;
+

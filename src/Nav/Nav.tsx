@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import './Nav.css'
 import {Link} from 'react-router-dom'
 import store from "../Redux/store";
@@ -61,7 +61,7 @@ const Nav = (props: any) => {
     })
     return(
         <div id='nav' className='navbar'>
-            <div className='title'><h3>REACTIVE SOLUTIONS</h3></div>
+            <Link to='/'><div className='title'><h3>REACTIVE SOLUTIONS</h3></div></Link>
             <div className='links'>
                 {links.map((link, i) => {
                     return(<div key={i} className={`link-btn ${link.pressed && 'link-pressed'}`}>

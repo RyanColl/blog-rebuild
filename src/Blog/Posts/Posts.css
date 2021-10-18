@@ -47,4 +47,5 @@
 .read-more:hover {
     background-color: #ECD646;
     transition: all 0.3s;
+    color: #2e2e2e;
 }

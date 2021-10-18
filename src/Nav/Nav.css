@@ -6,6 +6,16 @@
    align-items: center;
    color: #04080f;
 }
+.navbar a {
+    text-decoration: none;
+    color: #04080f;
+    transition: all 0.3s;
+}
+.navbar a:hover {
+    color: #2e2e2e;
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
 .title {
     font-size: 16px;
     white-space: nowrap;
@@ -25,7 +35,12 @@
     background-color: #ffffff;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25), -2px -2px 2px rgba(0, 0, 0, 0.25);
     margin: 0 12.5px;
-    transition: all 0.5s;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+.link-btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
 .link-pressed {
     transition: all 0.5s;
