@@ -6,6 +6,7 @@ import Blog from '../Blog/Blog';
 import { useEffect } from 'react';
 import store from '../Redux/store';
 import * as actions from '../Redux/actions'
+import BlogPost from '../Blog/BlogPost/BlogPost';
 const App = () => {
   const height = window.innerHeight
   const width = window.innerWidth
@@ -15,6 +16,7 @@ const App = () => {
   })
   return (
       <div className="App">
+        
         <img className="hex-img" 
         src={'/img/hex.png'}
         style={{width: width-15}}
@@ -25,8 +27,11 @@ const App = () => {
             <Route path='/' exact>
               <Welcome />
             </Route>
-            <Route path='/blog/:id'>
+            <Route path='/blog' exact>
                 <Blog />
+            </Route>
+            <Route path='/blog:id'>
+              <BlogPost />
             </Route>
           </Switch>
           

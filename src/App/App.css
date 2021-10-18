@@ -6,6 +6,7 @@
   align-items: center;
   width: 100%;
   overflow-x: hidden;
+  background-image: url('/src/img/hex.png');
 }
 .hex-img {
   position: absolute;

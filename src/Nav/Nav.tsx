@@ -50,7 +50,6 @@ const Nav = (props: any) => {
             let [loc] = store.getState()
            
             let assembly = links.map(link => {
-                console.log(`location: ${loc}, ${link.location}`)
                 return {
                     id: link.id,
                     location: link.location,
